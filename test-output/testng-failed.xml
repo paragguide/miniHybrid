@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="amazon(failed)">
+    <parameter name="filename" value="amazon"/>
+    <parameter name="obj" value="dest3"/>
+    <parameter name="browser" value="chrome"/>
+    <parameter name="name" value="amazon"/>
+    <parameter name="sheet" value="Sheet1"/>
+    <parameter name="url" value="https://www.amazon.in/"/>
+    <parameter name="key" value="true"/>
+    <parameter name="wbname" value="facebook.xlsx"/>
+    <classes>
+      <class name="testcases.AmazonSearch">
+        <methods>
+          <include name="searchtest"/>
+        </methods>
+      </class> <!-- testcases.AmazonSearch -->
+    </classes>
+  </test> <!-- amazon(failed) -->
+</suite> <!-- Failed suite [Suite] -->
